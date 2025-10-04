@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "up": "midnighttales:block/lamentaria_log_top",
+    "down": "midnighttales:block/lamentaria_log_top",
+    "north": "midnighttales:block/lamentaria_log",
+    "west": "midnighttales:block/lamentaria_log",
+    "south": "midnighttales:block/lamentaria_log",
+    "east": "midnighttales:block/lamentaria_log",
+    "particle": "midnighttales:block/lamentaria_log"
+  }
+}
