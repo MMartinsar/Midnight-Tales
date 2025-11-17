@@ -18,13 +18,18 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, MidnightTales.MOD_ID);
 
-    public static final RegistryObject<Block>  LAMENTARIA_LOG = registerBlock("lamentaria_log",
+    public static final RegistryObject<Block> LAMENTARIA_LOG = registerBlock("lamentaria_log",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).sound(SoundType.WOOD)));
 
-    public static final RegistryObject<Block>  LAMENTARIA_WOOD = registerBlock("lamentaria_wood",
+    public static final RegistryObject<Block> LAMENTARIA_PLANKS = registerBlock("lamentaria_planks",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> LAMENTARIA_WOOD = registerBlock("lamentaria_wood",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).sound(SoundType.WOOD)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

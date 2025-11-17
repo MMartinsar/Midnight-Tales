@@ -19,6 +19,7 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.midnighttales.spooky_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.LAMENTARIA_LOG.get());
+                        output.accept(ModBlocks.LAMENTARIA_PLANKS.get());
                         output.accept(ModBlocks.LAMENTARIA_WOOD.get());
 
                     }).build());
@@ -28,7 +29,18 @@ public class ModCreativeModTabs {
                     .withTabsBefore(SPOOKY_BLOCKS_TAB.getId())
                     .title(Component.translatable("creativetab.midnighttales.spooky_food_and_drinks"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.CANDY_CORN.get());
                         output.accept(ModItems.CHOCOLATE_CANDY.get());
+                        output.accept(ModItems.TURNIP.get());
+
+                    }).build());
+
+    public static final RegistryObject<CreativeModeTab> SPOOKY_FUNCTIONAL_BLOCKS_TAB = CREATIVE_MODE_TABS.register("spooky_functional_blocks_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAP_LEECH.get()))
+                    .withTabsBefore(SPOOKY_FOOD_AND_DRINKS_TAB.getId())
+                    .title(Component.translatable("creativetab.midnighttales.spooky_food_and_drinks"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.SAP_LEECH.get());
 
                     }).build());
 

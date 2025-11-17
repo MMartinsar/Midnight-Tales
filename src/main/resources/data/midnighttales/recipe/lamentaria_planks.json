@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [{
+    "item": "midnighttales:lamentaria_log"
+  }],
+  "result": {
+    "count": 4,
+    "id": "midnighttales:lamentaria_planks"
+  }
+}
